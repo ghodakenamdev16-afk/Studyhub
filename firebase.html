@@ -1,0 +1,32 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+import { 
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    updateProfile,
+    onAuthStateChanged,
+    signOut
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAgZcVznicSDvA9_fBMT9IcI66wXnm4nOw",
+    authDomain: "study-hub-3e60a.firebaseapp.com",
+    projectId: "study-hub-3e60a",
+    storageBucket: "study-hub-3e60a.firebasestorage.app",
+    messagingSenderId: "134872008849",
+    appId: "1:134872008849:web:ccaf914d65558a7f495730",
+    measurementId: "G-9LJ92KGZ1V"
+};
+
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+export {
+    auth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    updateProfile,
+    onAuthStateChanged,
+    signOut
+};
